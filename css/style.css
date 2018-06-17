@@ -434,7 +434,7 @@ header {
   list-style: decimal;
 }
 
-.more-btn {
+.more-btn-asus, .more-btn-ac {
   color: var(--dblue);
   float: right;
   font-size: 16px;
@@ -481,6 +481,11 @@ header {
 .overlay-heading {
   font-weight: 900;
   text-align: center;
+}
+
+#asus-content.overlay-inner,
+#ac-content.overlay-inner {
+  display: none;
 }
 /* skills */
 

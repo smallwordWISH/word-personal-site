@@ -13,12 +13,19 @@ $(document).ready(function(){
     $('#menu-toggle').css('display', 'grid');
   });
 
-  $('.timeline-body .more-btn').click(function(){
+  $('.timeline-body .more-btn-asus').click(function(){
     $('.overlay-ee').css('display', 'block');
+    $('#asus-content.overlay-inner').show();
+  });
+
+  $('.timeline-body .more-btn-ac').click(function(){
+    $('.overlay-ee').css('display', 'block');
+    $('#ac-content.overlay-inner').show();
   });
 
   $('.overlay-ee .close-btn').click(function(){
     $('.overlay-ee').css('display', 'none');
+    $('.overlay-inner').hide();
   });
 
   window.sr = ScrollReveal();
