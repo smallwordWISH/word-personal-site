@@ -434,7 +434,8 @@ header {
   list-style: decimal;
 }
 
-.more-btn-asus, .more-btn-ac {
+.timeline-body .more-btn-asus,
+.timeline-body .more-btn-ac {
   color: var(--dblue);
   float: right;
   font-size: 16px;
@@ -642,7 +643,6 @@ header {
   width: 100%;
   border: none;
   border-bottom: 1px solid #333;
-  text-transform: capitalize;
   padding-bottom: 10px;
   margin-bottom: 20px;
   outline: none;
@@ -664,7 +664,6 @@ header {
 .form-submit input {
   font-size: 16px;
   color: #FFF;
-  text-transform: capitalize;
   background-color: var(--blue);
   padding: 8px 38px;
   margin-top: 16px;
