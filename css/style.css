@@ -434,8 +434,7 @@ header {
   list-style: decimal;
 }
 
-.timeline-body .more-btn-asus,
-.timeline-body .more-btn-ac {
+.timeline-body .more-btn {
   color: var(--dblue);
   float: right;
   font-size: 16px;
@@ -540,6 +539,7 @@ header {
   -o-transition: .4s linear;
   transition: .4s linear;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+  overflow: hidden;
 }
 
 .work-item:hover {
