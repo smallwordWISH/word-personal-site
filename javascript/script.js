@@ -23,6 +23,11 @@ $(document).ready(function(){
     $('#ac-content.overlay-inner').show();
   });
 
+  $('.timeline-body .more-btn-bitasiaex').click(function(){
+    $('.overlay-ee').css('display', 'block');
+    $('#bitasiaex-content.overlay-inner').show();
+  });
+
   $('.overlay-ee .close-btn').click(function(){
     $('.overlay-ee').css('display', 'none');
     $('.overlay-inner').hide();
