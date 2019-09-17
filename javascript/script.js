@@ -1,6 +1,4 @@
 $(document).ready(function(){
-
-
   $('#menu-toggle').click(function(){
     $('header').css('transform', 'translateX(0)')
     $(this).css('display', 'none');
@@ -14,22 +12,29 @@ $(document).ready(function(){
   });
 
   $('.timeline-body .more-btn-asus').click(function(){
-    $('.overlay-ee').css('display', 'block');
     $('#asus-content.overlay-inner').show();
   });
 
   $('.timeline-body .more-btn-ac').click(function(){
-    $('.overlay-ee').css('display', 'block');
     $('#ac-content.overlay-inner').show();
   });
 
   $('.timeline-body .more-btn-bitasiaex').click(function(){
-    $('.overlay-ee').css('display', 'block');
     $('#bitasiaex-content.overlay-inner').show();
   });
 
+  $('.timeline-body .more-btn-breaktime').click(function(){
+    $('#breaktime-content.overlay-inner').show();
+  });
+
+  $('.timeline-body .more-btn').click(function(){
+    $('.overlay-ee').css('opacity', '1');
+    $('.overlay-ee').css('pointer-events', 'auto');
+  });
+
   $('.overlay-ee .close-btn').click(function(){
-    $('.overlay-ee').css('display', 'none');
+    $('.overlay-ee').css('opacity', '0');
+    $('.overlay-ee').css('pointer-events', 'none');
     $('.overlay-inner').hide();
   });
 
