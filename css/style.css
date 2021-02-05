@@ -92,6 +92,10 @@ h2 {
   border-radius: 50%;
 }
 
+#root-wrapper {
+  overflow-x: hidden;
+}
+
 /* header */
 
 header {
