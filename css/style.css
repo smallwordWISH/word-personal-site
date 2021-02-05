@@ -176,7 +176,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: 370px;
+  height: 280px;
 }
 
 .overlay {
@@ -185,7 +185,7 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  height:  370px;
+  height: 280px;
 }
 
 /* About Me */
@@ -195,7 +195,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 280px;
   width:100%;
-  height:auto;
+  height: 328px;
   background: var(--blue);
 }
 
@@ -235,7 +235,7 @@ header {
 }
 
 .social-icons {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 
@@ -259,18 +259,24 @@ header {
   position: absolute;
   top: 0;
   border-style: solid;
-  border-width: 0 0 280px 130px;
+  border-width: 0 0 328px 130px;
   border-color: rgba(223, 50, 50, 0) transparent transparent var(--blue);
 }
-/* Summary */
 
+#v-card .avatar-box .avatar-img {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/my-avatar.jpg)
+}
+
+/* Summary */
 
 .summary-content {
   padding: 30px;
   background: #FFF;
   display: grid;
 }
-
 
 .button-group {
   margin-top: 30px;
@@ -676,6 +682,7 @@ header {
   outline: none;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif; 
+  border: none;
 }
 
 .form-submit input:hover {
@@ -726,6 +733,15 @@ footer {
   .container {
     width: 90%;
   }
+
+  .home-bg {
+    height: 370px;
+  }
+  
+  .overlay {
+    height: 370px;
+  }
+  
   
   #v-card {
     grid-template-columns: 1fr;
@@ -760,12 +776,14 @@ footer {
    top: -100px;
 
   }
-  #v-card .avatar-box img {
+  #v-card .avatar-box .avatar-img {
     height: 150px;
     width: 150px;
-    border-style: 1px solid transparant;
+    border-style: 1px solid transparent;
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    background-size: cover;
+    background-image: url(../images/my-avatar-sm.jpg);
   }
 
   .slant {

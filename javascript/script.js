@@ -27,6 +27,10 @@ $(document).ready(function(){
     $('#breaktime-content.overlay-inner').show();
   });
 
+  $('.timeline-body .more-btn-actiontec').click(function(){
+    $('#actiontec-content.overlay-inner').show();
+  });
+
   $('.timeline-body .more-btn').click(function(){
     $('.overlay-ee').css('opacity', '1');
     $('.overlay-ee').css('pointer-events', 'auto');
